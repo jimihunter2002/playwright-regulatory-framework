@@ -9,8 +9,9 @@ test('All ingested records are complete', async ({ request }, testInfo) => {
   });
 
   const response = await fetchUsers(request, 2);
-  const body = await response.json();
+  expect(response.status()).toBe(200);
 
+  const body = await response.json();
   expect(body.data.length).toBeGreaterThan(0);
 
   body.data.forEach((u: any) => {
