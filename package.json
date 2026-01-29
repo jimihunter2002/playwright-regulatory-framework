@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "playwright test",
-    "report": "allure generate ./allure-results -o ./allure-report --clean"
+    "allure:generate": "allure generate ./allure-results -o ./allure-report --clean"
   },
   "devDependencies": {
     "@playwright/test": "^1.41.0",
