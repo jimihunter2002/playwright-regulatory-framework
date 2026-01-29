@@ -1,0 +1,18 @@
+{
+  "name": "playwright-regulatory-framework",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test",
+    "report": "allure generate ./allure-results -o ./allure-report --clean"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.41.0",
+    "ajv": "^8.12.0",
+    "allure-commandline": "^2.36.0",
+    "allure-js-commons": "^3.4.5",
+    "allure-playwright": "^3.4.5",
+    "dotenv": "^17.2.3",
+    "rimraf": "^6.1.2",
+    "typescript": "^5.2.0"
+  }
+}
